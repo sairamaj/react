@@ -30,7 +30,9 @@ class FetchData extends React.Component {
         <tbody>
           {techtips.map(techtip =>
             <tr key={techtip.name}>
-              <td>{techtip.name}</td>
+              <td>
+                <a href={techtip.href}>{techtip.name}</a>
+              </td>
             </tr>
           )}
         </tbody>
